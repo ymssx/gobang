@@ -69,6 +69,18 @@ function draw_box()
 		cxt.moveTo(temp*j,0);
 		cxt.lineTo(temp*j,chess_board_aviable_height);
 	}
+	cxt.fillStyle="#000";
+	cxt.moveTo(3*temp,3*temp);
+	cxt.arc(3*temp,3*temp,3,0,Math.PI*2,true);
+	cxt.moveTo(11*temp,3*temp);
+	cxt.arc(11*temp,3*temp,3,0,Math.PI*2,true);
+	cxt.moveTo(3*temp,11*temp);
+	cxt.arc(3*temp,11*temp,3,0,Math.PI*2,true);
+	cxt.moveTo(11*temp,11*temp);
+	cxt.arc(11*temp,11*temp,3,0,Math.PI*2,true);
+	cxt.moveTo(7*temp,7*temp);
+	cxt.arc(7*temp,7*temp,3,0,Math.PI*2,true);
+	cxt.fill();
 	cxt.stroke();
 }
 
@@ -194,7 +206,7 @@ function msg(text)
 		if (text=="黑方胜")
 		{
 			$(".msg_box").css({
-				"backgroundColor":"black",
+				"backgroundColor":"#000",
 				"color":"white",
 			});
 		}

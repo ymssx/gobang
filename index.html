@@ -1,0 +1,53 @@
+<html>
+<title>五子棋</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<style type="text/css">
+		.chess_board
+		{
+			width:680px;
+			height:88%;
+			border-radius:10px;
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			border:10px solid #fff;
+			cursor:pointer; 
+		}
+		.chess_board_aviable
+		{
+			width:680px;
+			height:82.5%;
+			border:3px solid #000;
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		}
+		.msg_box
+		{
+			width:300px;
+			height:100px;
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%) scale(0,0);
+			background-color:#eee;
+			border-radius:10px;
+			transition:transform 0.5s;
+			-webkit-transition:transform 0.5s;
+			text-align:center;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body style="background-color:#ddd">
+	<div class="chess_board" style="background-color:#fff;"></div>
+	<div class="chess_board_aviable" id="chess_board_aviable"><canvas id="chess_canvas"></canvas></div>
+	<div id="board" class="chess_board"></div>
+	<div id="msg_box" class="msg_box" onclick="$('.msg_box').slideUp()"><div id="text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:45px;font-family:楷体"></div></div>
+</body>
+</html>

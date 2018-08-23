@@ -29,14 +29,14 @@
 		}
 		.msg_box
 		{
-			width:300px;
+			width:230px;
 			height:100px;
 			position:fixed;
 			top:50%;
 			left:50%;
 			transform:translate(-50%,-50%) scale(0,0);
 			background-color:#eee;
-			border-radius:10px;
+			border-radius:20px;
 			transition:transform 0.5s;
 			-webkit-transition:transform 0.5s;
 			text-align:center;
@@ -48,6 +48,6 @@
 	<div class="chess_board" style="background-color:#fff;"></div>
 	<div class="chess_board_aviable" id="chess_board_aviable"><canvas id="chess_canvas"></canvas></div>
 	<div id="board" class="chess_board"></div>
-	<div id="msg_box" class="msg_box" onclick="$('.msg_box').slideUp()"><div id="text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:45px;font-family:楷体"></div></div>
+	<div id="msg_box" class="msg_box" onclick="$('.msg_box').slideUp()"><nobr><div id="text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:50px;font-family:仿宋"></div></nobr></div>
 </body>
 </html>
